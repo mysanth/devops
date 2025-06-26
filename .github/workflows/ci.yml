@@ -24,8 +24,9 @@ jobs:
           pip install pytest
 
       - name: Run tests
-        run: pytest
-
+        run: |
+           PYTHONPATH=. pytest
+           
       - name: Build Docker image
         uses: docker/build-push-action@v5
         with:
@@ -33,6 +34,4 @@ jobs:
           push: false
           tags: mysanthp/devops-starter:latest
 
-      - name: Run tests
-        run: |
-           PYTHONPATH=. pytest
+
