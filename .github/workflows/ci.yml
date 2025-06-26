@@ -32,6 +32,6 @@ jobs:
         with:
           context: .
           push: false
-          tags: mysanthp/devops-starter:latest
+          tags: mysanthp/devops:latest
 
 
