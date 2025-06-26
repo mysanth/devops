@@ -32,3 +32,7 @@ jobs:
           context: .
           push: false
           tags: mysanthp/devops-starter:latest
+
+      - name: Run tests
+        run: |
+           PYTHONPATH=. pytest
