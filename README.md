@@ -1,4 +1,4 @@
-## DevOps Starter Project
+# DevOps Starter Project
 
 A minimal Python web application with CI/CD pipeline, Docker containerization, and optional cloud deployment files.
 This template demonstrates the skills listed in my resume:
