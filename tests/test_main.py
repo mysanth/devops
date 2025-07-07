@@ -1,4 +1,4 @@
-from app.main import app
+nfrom app.main import app
 
 def test_index():
     client = app.test_client()
