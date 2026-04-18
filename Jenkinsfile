@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/java-cicd-app.git'
+                git 'https://github.com/mysanth/devops.git'
             }
         }
 
