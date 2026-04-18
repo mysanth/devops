@@ -1,29 +1,22 @@
-# DevOps Starter Project
+# Java CI/CD Pipeline with Docker
 
-A minimal Python web application with CI/CD pipeline, Docker containerization, and optional cloud deployment files.
-This template demonstrates the skills listed in my resume:
-- **Python** development
-- **Git & GitHub** workflows
-- **GitHub Actions** for CI/CD
-- **Docker** for containerization
-- **AWS (optional)** infrastructure as code
+## Overview
+This project demonstrates a CI/CD pipeline using Jenkins to build, containerize, and deploy a Java application.
 
-## Getting Started
+## Tech Stack
+- Java
+- Maven
+- Jenkins
+- Docker
 
+## Pipeline Stages
+1. Code Checkout from GitHub
+2. Build using Maven
+3. Docker Image Creation
+4. Container Deployment
+
+## How to Run
 ```bash
-pip install -r app/requirements.txt
-python app/main.py
-```
-
-Browse to http://127.0.0.1:5000.
-
-## CI/CD
-
-Every push triggers GitHub Actions to:
-1. Install dependencies
-2. Run unit tests
-3. Build Docker image & optionally push to Docker Hub
-
-## License
-
-MIT
+mvn clean package
+docker build -t java-cicd-app .
+docker run -p 8080:8080 java-cicd-app
