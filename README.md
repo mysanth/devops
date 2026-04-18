@@ -8,7 +8,7 @@ This project demonstrates a basic CI/CD pipeline using Jenkins to automate the b
    - Retrieves the latest code from GitHub repository
 
 2. **Build**
-   - Compiles the Java application using Maven (`mvn clean install`)
+   - Compiles the Java application using Maven (`mvn clean package`)
 
 3. **Docker Image Creation**
    - Builds a Docker image for the application using a Dockerfile
